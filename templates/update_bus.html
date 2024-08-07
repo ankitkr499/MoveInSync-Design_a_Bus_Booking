@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Bus</title>
+</head>
+<body>
+    <h1>Update Bus</h1>
+    <form method="POST">
+        <label for="bus_name">Bus Name:</label>
+        <input type="text" id="bus_name" name="bus_name" value="{{ bus.bus_name }}" required><br>
+        <label for="total_seats">Total Seats:</label>
+        <input type="text" id="total_seats" name="total_seats" value="{{ bus.total_seats }}" required><br>
+        <label for="operation_days">Operation Days (comma separated):</label>
+        <input type="text" id="operation_days" name="operation_days" value="{{ bus.operation_days }}" required><br>
+        <label for="source">Source:</label>
+        <input type="text" id="source" name="source" value="{{ bus.source }}" required><br>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" value="{{ bus.destination }}" required><br>
+        <label for="distance">Distance:</label>
+        <input type="text" id="distance" name="distance" value="{{ bus.distance }}" required><br>
+        <label for="eta">Estimated Time of Arrival:</label>
+        <input type="text" id="eta" name="eta" value="{{ bus.eta }}" required><br>
+        <button type="submit">Update Bus</button>
+    </form>
+</body>
+</html>

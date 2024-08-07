@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard</title>
+</head>
+<body>
+    <h1>User Dashboard</h1>
+    <a href="{{ url_for('browse_buses') }}">Browse Buses</a><br>
+    <a href="{{ url_for('check_seat_availability', bus_id=1) }}">Check Seat Availability</a><br>
+    <a href="{{ url_for('book_seat', bus_id=1) }}">Book Seat</a><br>
+    <a href="{{ url_for('cancel_seat', bus_id=1) }}">Cancel Seat</a><br>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

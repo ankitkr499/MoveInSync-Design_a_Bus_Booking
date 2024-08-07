@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Seat Availability</title>
+</head>
+<body>
+    <h1>Check Seat Availability for Bus {{ bus_id }}</h1>
+    <ul>
+    {% for seat in seat_status %}
+        <li>Seat {{ seat.seat_number }}: {{ seat.status }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
